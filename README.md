@@ -1,6 +1,10 @@
 node v18.13.0
 npm 8.19.3
 
+```
+Пошаговое руководство по настройке сборщика Webpack 5 https://habr.com/ru/post/701724/
+```
+
 ## О проекте
 
 Webpack 5, Pug 3, Sass, JavaScript, React
