@@ -1,0 +1,12 @@
+extends ../layouts/article-layout.pug
+
+block variables
+  - const title = "Статья"
+  - const name = "article-page"
+
+block content
+  .container
+    h1 Article layout
+    a(href="/") Линк на index
+    hr
+    include ../parts/button.pug

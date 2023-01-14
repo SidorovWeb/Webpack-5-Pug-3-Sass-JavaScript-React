@@ -1,15 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
-import './main.scss';
-import './fonts/fonts.scss';
+// import React from 'react'
+// import ReactDOM from 'react-dom'
+// import App from './components/app'
+// ReactDOM.render(<App />, document.getElementById('root'))
 
-function component(text) {
-  const element = document.createElement('h1');
-  element.textContent = text;
-  return element;
+const ready = () => {
+  const btn = document.querySelector('.btn')
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('text-red')
+  })
 }
 
-document.body.prepend(component('Проект собран на Webpack'));
-
-ReactDOM.render(<App />, document.getElementById('root'));
+document.addEventListener('DOMContentLoaded', ready)
